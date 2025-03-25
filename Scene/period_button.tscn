@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://djmd68g6mrg6n"]
+
+[ext_resource type="Script" uid="uid://d3gbrixh7y40m" path="res://Scripts/period_button.gd" id="1_wio00"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hhb8t"]
+bg_color = Color(0.193632, 0.193632, 0.193632, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dj8ov"]
+bg_color = Color(0.905335, 0.905335, 0.905335, 1)
+
+[node name="PeriodButton" type="Button"]
+custom_minimum_size = Vector2(80, 30)
+offset_right = 160.0
+offset_bottom = 40.0
+theme_override_colors/font_disabled_color = Color(0.987634, 0.987634, 0.987634, 1)
+theme_override_styles/disabled = SubResource("StyleBoxFlat_hhb8t")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dj8ov")
+toggle_mode = true
+script = ExtResource("1_wio00")

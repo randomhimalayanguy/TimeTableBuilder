@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://v8y30fwkdht0"]
+
+[ext_resource type="Script" uid="uid://igny6fpixbie" path="res://Scripts/test_button.gd" id="1_0n47r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0n47r"]
+bg_color = Color(0.941948, 0.941948, 0.941948, 1)
+
+[node name="TestButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0n47r")
+toggle_mode = true
+text = "Click me"
+script = ExtResource("1_0n47r")

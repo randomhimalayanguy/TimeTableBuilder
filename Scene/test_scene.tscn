@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8uawn4xu4vfc"]
+
+[ext_resource type="PackedScene" uid="uid://v8y30fwkdht0" path="res://Scene/test_button.tscn" id="1_jy2en"]
+[ext_resource type="Script" uid="uid://lasnoko4xbyl" path="res://Scripts/test_scene.gd" id="1_wqv7g"]
+
+[node name="TestScene" type="Panel"]
+offset_left = 439.0
+offset_top = 272.0
+offset_right = 719.0
+offset_bottom = 396.0
+script = ExtResource("1_wqv7g")
+
+[node name="TestButton" parent="." instance=ExtResource("1_jy2en")]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -36.5
+offset_top = -31.0
+offset_right = 36.5
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0

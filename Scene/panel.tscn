@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkrp85sstb271"]
+
+[ext_resource type="Script" uid="uid://cn1phqp28klwb" path="res://Scripts/color_label.gd" id="1_a027q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2kwug"]
+bg_color = Color(1, 0.331653, 0.362707, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+anti_aliasing_size = 2.0
+
+[node name="Panel" type="Panel"]
+custom_minimum_size = Vector2(130, 35)
+offset_right = 130.0
+offset_bottom = 35.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2kwug")
+script = ExtResource("1_a027q")
+text = "hello"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 4
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+text = "Important"
+horizontal_alignment = 1

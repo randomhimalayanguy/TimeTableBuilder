@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkuqbcpvqq4a"]
+
+[ext_resource type="ButtonGroup" uid="uid://bcyt3ween0an6" path="res://extras/day_btn_group.tres" id="1_238cf"]
+
+[node name="Day_btn" type="Button"]
+offset_right = 111.0
+offset_bottom = 43.0
+toggle_mode = true
+button_group = ExtResource("1_238cf")
+text = "Monday"
