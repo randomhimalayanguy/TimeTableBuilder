@@ -19,8 +19,13 @@ func set_periods(periods : int):
 		btn.pressed.connect(_period_chosen.bind(i, btn))
 
 
-func _period_chosen(i, btn):
-	btn.text = DataManager.period_select(i, name_of_class.text)
+func _period_chosen(i, btn : Button):
+	var classroom_no = DataManager.period_select(i, name_of_class.text)
+	if classroom_no == "":
+		btn.button_pressed = false
+	else:
+		btn.text = classroom_no
+		btn.button_pressed = true
 
 
 func get_class_name():
