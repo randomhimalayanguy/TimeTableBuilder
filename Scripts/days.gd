@@ -6,8 +6,6 @@ var btn_group = preload("res://extras/day_btn_group.tres")
 
 var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-signal day_selected
-
 
 func _ready():
 	add_btn(days[0], true)
@@ -29,4 +27,4 @@ func get_days():
 
 
 func _day_chosen(cur_day):
-	day_selected.emit(cur_day)
+	DataManager.set_cur_day(cur_day)

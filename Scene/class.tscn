@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bacyimhoqbkd3"]
 
-[ext_resource type="Script" uid="uid://k8j4i4qcitaj" path="res://Scripts/class.gd" id="1_w0goi"]
+[ext_resource type="Script" uid="uid://k8j4i4qcitaj" path="res://Scripts/class_manager.gd" id="1_w0goi"]
 
 [node name="Class" type="Panel"]
 custom_minimum_size = Vector2(240, 60)
